@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="stylecomingsoon.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="LimmysNaturalsLogoV3.png" alt="Logo"></a>
+        </div>
+        <h1>Coming Soon</h1>
+        <p>We are working hard to bring you an amazing experience. Stay tuned!</p>
+        <div class="subscribe">
+            <input type="email" placeholder="Enter your email to stay updated" id="email">
+            <button onclick="subscribe()">Notify Me</button>
+        </div>
+        <footer>
+            <p>&copy; 2024 Limmy's Naturals. All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script>
+
+function subscribe() {
+    const email = document.getElementById('email').value;
+    if (email) {
+        alert(`Thank you! We will notify you at ${email} once we are live.`);
+    } else {
+        alert('Please enter a valid email address.');
+    }
+}
+
+    </script>
+</body>
+</html>

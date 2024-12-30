@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 40px 20px;
+    /* border: 1px solid blue; */
+}
+
+/* Body styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+/* Heading styles */
+h1 {
+    border-bottom: 1px solid grey;
+    font-size: 2.5rem;
+}
+
+/* Menu container styles */
+.menu {
+    max-width: 1300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
+    margin-bottom: 50px;
+}
+
+/* Menu item styles */
+.menuItem {
+    background-color: #FFA500;
+    margin: 50px 25px 0px 25px;
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease; /* Add a smooth hover effect */
+    border-radius: 10px;
+}
+
+.menuItem:hover {
+    /* background-color: #FFD700; */
+    cursor: pointer;
+}
+
+/* Indivdual Menu Items */
+.chin-chin {background-image: url('Chin-Chin1.webp'); color: white;}
+.fishRoll {background-image : url('FishRoll2.jpg'); color: white;}
+.meatPie {background-image: url('meatPie5.jpg'); color: white;}
+.cake {background-image: url('bananaCake6.jpg'); color: white;}
+.birthdayCake {background-image: url('birthdayCake5.webp'); color: black;}
+.cupcake {background-image: url('cupcakes2.webp'); color: white;}
+
+/* Menu item text styles */
+.menuItem h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Pop Up */
+
+.popup {
+    display: block;
+    pointer-events: none;
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: none;
+    visibility: hidden;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 1s ease;
+    font-family: 'Open sans';
+}
+
+.popup.show {
+    visibility: visible;
+    display: block;
+    background-color: hsl(0, 0%, 100%);
+    width: 500px;
+    height: 500px;
+    color: black;
+    transition: opacity 1s ease;
+    opacity: 1;
+    cursor: default;
+}
+
+/* POP UP INFOOOOOOOOOOO --- For ALL Menu Items */
+.popup h3 {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: hsl(34, 88%, 75%);
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.symbol {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.fas {
+    font-size: 30px;
+    color: #888;
+}
+
+.descriptionTT {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.bulletPoints {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    margin: 25px 0px 25px 45px;
+}
+
+.prices .p, .allergyGroup .p {
+    font-weight: bold;
+}
+
+.addtocartbtn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    margin-top: 35px;
+    border-radius: 5px;
+    z-index: 100;
+    pointer-events: auto;
+    transition: all 0.3s ease3 b bk;
+}
+
+.addtocartbtn:hover {
+    background-color: hsl(213, 23%, 51%);
+    cursor: pointer;
+}
+
+.allergyGroup {
+    width: fit-content;
+    font-size: 0.8rem;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* Additional ------------------ */
+
+/* CSS to make menu items unclickable */
+.unclickable {
+    pointer-events: none;
+    /* opacity: 0.5; Optional: Make unclickable items semi-transparent */
+}
+
+
+

@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+.navbar {
+    /* border: 1px solid red; */
+}
+
+/* Container styles */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Content styles */
+.content {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    /* border: 1px solid blue; */
+    max-width: 1300px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.values-list {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+
